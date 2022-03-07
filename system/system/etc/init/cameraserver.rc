@@ -1,0 +1,14 @@
+on property:sys.boot_completed=1
+    exec_background /system/bin/micompactmemory ${persist.vendor.camera.provider.pid} anon
+
+on property:persist.sys.camera.cameraservice.uid_idle=1
+    exec_background /system/bin/micompactmemory ${persist.vendor.camera.provider.pid} anon
+
+service cameraserver /system/bin/cameraserver
+    class main
+    user cameraserver
+    group audio camera input drmrpc readproc
+    ioprio rt 4
+    task_profiles CameraServiceCapacity HighPerformance
+    rlimit rtprio 10 10
+    writepid /dev/memcg/camera/service/cgroup.procs
