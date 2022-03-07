@@ -1,0 +1,7 @@
+<!--
+    Input:
+        manifest-vayu-qva.xml
+-->
+<manifest version="2.0" type="device" target-level="5">
+    <kernel target-level="5"/>
+</manifest>
