@@ -1,0 +1,4 @@
+# corefile limit
+on property:persist.debug.trace=1
+   mkdir /data/core 0777 root root
+   write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
