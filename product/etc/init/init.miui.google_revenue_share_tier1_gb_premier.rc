@@ -1,0 +1,74 @@
+# Use the default value for new product.
+#on property:ro.miui.customized_clientid=2
+#    setprop ro.com.miui.rsa tier1
+#    setprop ro.com.google.clientidbase android-xiaomi
+#    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo3
+#    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo3
+#    setprop ro.com.google.clientidbase.tx android-xiaomi-rvo3
+#    setprop ro.com.google.clientidbase.ax android-xiaomi-rvo3
+
+# Use the old client id for ru only
+#on property:ro.miui.cust_variant=ru && property:ro.miui.customized_clientid=2
+#    setprop ro.com.google.clientidbase android-xiaomi
+#    setprop ro.com.google.clientidbase.ms android-xiaomi
+
+on property:persist.com.miui.rsa_region=th && property:ro.miui.customized_clientid=2 && property:ro.miui.build.region=global && property:ro.miui.customized.region=
+    setprop ro.com.miui.rsa tier2
+    setprop ro.com.google.clientidbase android-xiaomi
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.tx ""
+    setprop ro.com.google.clientidbase.ax ""
+    setprop ro.com.google.rlz_ap_whitelist YA
+    setprop ro.com.google.rlzbrandcode GOFU
+
+on property:persist.com.miui.rsa_region=vn && property:ro.miui.customized_clientid=2 && property:ro.miui.build.region=global && property:ro.miui.customized.region=
+    setprop ro.com.miui.rsa tier2
+    setprop ro.com.google.clientidbase android-xiaomi
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.tx ""
+    setprop ro.com.google.clientidbase.ax ""
+    setprop ro.com.google.rlz_ap_whitelist YA
+    setprop ro.com.google.rlzbrandcode GOFU
+
+on property:persist.com.miui.rsa_region=my && property:ro.miui.customized_clientid=2 && property:ro.miui.build.region=global && property:ro.miui.customized.region=
+    setprop ro.com.miui.rsa tier2
+    setprop ro.com.google.clientidbase android-xiaomi
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.tx ""
+    setprop ro.com.google.clientidbase.ax ""
+    setprop ro.com.google.rlz_ap_whitelist YA
+    setprop ro.com.google.rlzbrandcode GOFU
+
+on property:persist.com.miui.rsa_region=ph && property:ro.miui.customized_clientid=2 && property:ro.miui.build.region=global && property:ro.miui.customized.region=
+    setprop ro.com.miui.rsa tier2
+    setprop ro.com.google.clientidbase android-xiaomi
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo2
+    setprop ro.com.google.clientidbase.tx ""
+    setprop ro.com.google.clientidbase.ax ""
+    setprop ro.com.google.rlz_ap_whitelist YA
+    setprop ro.com.google.rlzbrandcode GOFU
+
+on property:ro.miui.cust_variant=* && property:ro.miui.customized_clientid=2 && property:persist.com.miui.rsa_region=""
+    setprop ro.com.miui.rsa tier1
+    setprop ro.com.google.clientidbase android-xiaomi
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo3
+    setprop ro.com.google.clientidbase.vs android-xiaomi-rvo3
+    setprop ro.com.google.clientidbase.tx android-xiaomi-rvo3
+    setprop ro.com.google.clientidbase.ax android-xiaomi-rvo3
+    setprop ro.com.miui.rsa_setted 1
+
+on property:ro.com.miui.rsa_setted=1 && property:persist.com.miui.rsa_region=th
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+
+on property:ro.com.miui.rsa_setted=1 && property:persist.com.miui.rsa_region=vn
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+
+on property:ro.com.miui.rsa_setted=1 && property:persist.com.miui.rsa_region=my
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2
+
+on property:ro.com.miui.rsa_setted=1 && property:persist.com.miui.rsa_region=ph
+    setprop ro.com.google.clientidbase.ms android-xiaomi-rvo2

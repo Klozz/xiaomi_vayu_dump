@@ -1,0 +1,17 @@
+<string-array name="removable_apk_list">
+    <item>com.duokan.phone.remotecontroller</item>
+    <item>com.mi.global.pocobbs</item>
+    <item>com.mi.global.pocostore</item>
+    <item>com.mi.globalbrowser</item>
+    <item>com.miui.android.fashiongallery</item>
+    <item>com.miui.mediaeditor</item>
+</string-array>
+
+<string-array name="removable_apk_path_list">
+    <item>/product/data-app/XMRemoteController/XMRemoteController.apk</item>
+    <item>/product/data-app/POCOCOMMUNITY_OVERSEA/POCOCOMMUNITY_OVERSEA.apk</item>
+    <item>/product/data-app/POCOSTORE_OVERSEA/POCOSTORE_OVERSEA.apk</item>
+    <item>/product/data-app/MIBrowserGlobal_removable/MIBrowserGlobal_removable.apk</item>
+    <item>/product/data-app/MiGalleryLockScreenGlobalT/MiGalleryLockScreenGlobalT.apk</item>
+    <item>/product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk</item>
+</string-array>

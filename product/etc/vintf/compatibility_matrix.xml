@@ -1,0 +1,22 @@
+<!--
+    Input:
+        qssi_vendor_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintNavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
