@@ -1,0 +1,31 @@
+{
+  "packageName": "com.sup.android.superb",
+  "forceDark": true,
+  "mainRule": 0,
+  "secondaryRule": 0,
+  "forceDarkActivityConfigList": [
+    {
+      "activityName": "com.sup.android.webui.BrowserActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.sup.android.webui.DefaultBrowserFragment$1",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1
+            },
+            {
+              "parent": 4,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "browser_fragment"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

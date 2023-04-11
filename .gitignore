@@ -1,0 +1,13 @@
+modem.img
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/app/Messages/Messages.apk
+product/data-app/MIBrowserGlobal_removable/MIBrowserGlobal_removable.apk
+product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk
+product/priv-app/Velvet/Velvet.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/ExtraPhotoGlobal/ExtraPhotoGlobal.apk
+product/priv-app/Gallery_T_Global/Gallery_T_Global.apk
+boot.img
+vendor/etc/camera/st_license.lic
+system_ext/priv-app/Settings/Settings.apk
+system_ext/apex/com.android.vndk.v30.apex
